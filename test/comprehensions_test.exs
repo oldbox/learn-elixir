@@ -5,6 +5,7 @@ defmodule ComprehensionsTest do
   doctest Comprehensions.Basic
 
   test "outputs hello" do
-    assert capture_io(fn -> IO.puts(Comprehensions.Basic.binaries_comprehension("hello")) end) == "hello\n"
+    assert capture_io(fn -> IO.puts(Comprehensions.Basic.binaries_comprehension("hello")) end) ==
+             "hello\n"
   end
 end
